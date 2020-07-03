@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+</head>
+
+<body>
+ <input type="number" name="enterValue" id="enterValue" value="" placeholder="enterValue" />
+ <input type="button" name="btn" id="btn" value="test" />
+  <input type="button" name="btn1" id="btn1" value="tap me" />
+
+ <h1 class="show">This is: <span></span></h1>
+ 
+ <script type="text/javascript">
+  document.querySelector("#btn").addEventListener("click", function (){
+   var enterValue = document.querySelector("#enterValue").value;
+   
+    var addedValue=document.querySelector("h1 span").innerHTML+=enterValue;
+   
+  })
+
+ </script>
+</body>
+
+</html>
